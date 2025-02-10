@@ -36,7 +36,7 @@ function About() {
               <h2>Software Engineer (UG)</h2>
               <p className="fst-italic py-3">
                 I'm a driven undergraduate software engineer at the Open
-                University of Sri Lanka.
+                University of Sri Lanka.OUSL
               </p>
               <div className="row">
                 <div className="col-lg-6">
