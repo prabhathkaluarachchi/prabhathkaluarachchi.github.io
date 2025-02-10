@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-      // Check if we are already on the homepage ('/') or not
+      // Check if the pathname exists and redirect to index.html with the same path
       var path = window.location.pathname;
-      // Prevent the redirect from happening on the homepage or when it's already at index.html
-      if (path !== '/' && path !== '/404.html') {
-        window.location.replace('/');
+      if (path !== '/') {
+        window.location.replace(path);
       }
     </script>
   </head>
