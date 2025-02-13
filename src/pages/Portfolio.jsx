@@ -78,7 +78,7 @@ function Portfolio() {
               </p>
               <a href="assets/img/portfolio/app-1.jpg" title="Prabhath Kaluarachchi Portfolio Website"
                 data-gallery="portfolio-gallery-web" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
-              <a href="https://prabhath.me/" target="_blank" title="Prabhath Kaluarachchi Portfolio Website"
+              <a href="https://prabhath.online/" target="_blank" title="Prabhath Kaluarachchi Portfolio Website"
                 className="details-link"><i className="bi bi-link-45deg"></i></a>
             </div>
           </div>
