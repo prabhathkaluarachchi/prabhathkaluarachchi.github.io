@@ -1,19 +1,23 @@
-import React, { useEffect } from 'react';
-import PageTitle from '../components/PageTitle';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import React, { useEffect } from "react";
+import PageTitle from "../components/PageTitle";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 function About() {
   useEffect(() => {
-    import('swiper').then(Swiper => {
+    import("swiper").then((Swiper) => {
       // If you need to dynamically import Swiper components
-      Swiper.default.use([Swiper.Navigation, Swiper.Pagination, Swiper.Autoplay]);
+      Swiper.default.use([
+        Swiper.Navigation,
+        Swiper.Pagination,
+        Swiper.Autoplay,
+      ]);
     });
 
     // Initialize the progress bars
-    const progressBars = document.querySelectorAll('.progress-bar');
-    progressBars.forEach(bar => {
-      const value = bar.getAttribute('aria-valuenow');
+    const progressBars = document.querySelectorAll(".progress-bar");
+    progressBars.forEach((bar) => {
+      const value = bar.getAttribute("aria-valuenow");
       bar.style.width = `${value}%`;
     });
   }, []);
@@ -49,7 +53,9 @@ function About() {
                       <i className="bi bi-chevron-right"></i>
                       <strong>Website:</strong>
                       <span>
-                        <a href="https://prabhath.online/">www.prabhath.online</a>
+                        <a href="https://prabhath.online/">
+                          www.prabhath.online
+                        </a>
                       </span>
                     </li>
                     <li>
@@ -66,7 +72,8 @@ function About() {
                 <div className="col-lg-6">
                   <ul>
                     <li>
-                      <i className="bi bi-chevron-right"></i> <strong>Age:</strong>
+                      <i className="bi bi-chevron-right"></i>{" "}
+                      <strong>Age:</strong>
                       <span>25</span>
                     </li>
                     <li>
@@ -76,7 +83,9 @@ function About() {
                     <li>
                       <i className="bi bi-chevron-right"></i>
                       <strong>Email:</strong>
-                      <a href="mailto:fmprabhath@gmail.com">fmprabhath@gmail.com</a>
+                      <a href="mailto:fmprabhath@gmail.com">
+                        fmprabhath@gmail.com
+                      </a>
                     </li>
                     <li>
                       <i className="bi bi-chevron-right"></i>
@@ -116,7 +125,9 @@ function About() {
           <div className="row skills-content skills-animation">
             <div className="col-lg-6">
               <div className="progress">
-                <span className="skill"><span>HTML</span> <i className="val">99%</i></span>
+                <span className="skill">
+                  <span>HTML</span> <i className="val">99%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -129,7 +140,9 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>CSS</span> <i className="val">95%</i></span>
+                <span className="skill">
+                  <span>CSS</span> <i className="val">95%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -142,7 +155,9 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>JavaScript</span> <i className="val">85%</i></span>
+                <span className="skill">
+                  <span>JavaScript</span> <i className="val">85%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -155,7 +170,10 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>Adobe Photoshop / Illustrator</span> <i className="val">95%</i></span>
+                <span className="skill">
+                  <span>Adobe Photoshop / Illustrator</span>{" "}
+                  <i className="val">95%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -168,7 +186,9 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>Figma</span> <i className="val">90%</i></span>
+                <span className="skill">
+                  <span>Figma</span> <i className="val">90%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -181,7 +201,9 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>Bootstrap</span> <i className="val">80%</i></span>
+                <span className="skill">
+                  <span>Bootstrap</span> <i className="val">80%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -196,7 +218,9 @@ function About() {
 
             <div className="col-lg-6">
               <div className="progress">
-                <span className="skill"><span>PHP</span> <i className="val">80%</i></span>
+                <span className="skill">
+                  <span>PHP</span> <i className="val">80%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -209,7 +233,9 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>WordPress/CMS</span> <i className="val">90%</i></span>
+                <span className="skill">
+                  <span>WordPress/CMS</span> <i className="val">90%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -222,7 +248,9 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>JAVA / OOP</span> <i className="val">85%</i></span>
+                <span className="skill">
+                  <span>JAVA / OOP</span> <i className="val">85%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -235,7 +263,9 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>Python</span> <i className="val">85%</i></span>
+                <span className="skill">
+                  <span>Python</span> <i className="val">85%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -248,7 +278,9 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>React</span> <i className="val">60%</i></span>
+                <span className="skill">
+                  <span>React</span> <i className="val">60%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -261,7 +293,9 @@ function About() {
               </div>
 
               <div className="progress">
-                <span className="skill"><span>NodeJs</span> <i className="val">65%</i></span>
+                <span className="skill">
+                  <span>NodeJs</span> <i className="val">65%</i>
+                </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
@@ -279,105 +313,209 @@ function About() {
       {/* /Skills Section */}
 
       <section id="interests" className="interests section">
-  {/* Section Title */}
-  <div className="container section-title" data-aos="fade-up">
-    <h2>Features</h2>
-    <div>
-      <span>I'm</span>
-      <span className="description-title">interested in</span>
-    </div>
-  </div>
-  {/* End Section Title */}
-
-  <div className="container">
-    <div className="row gy-4">
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div className="features-item">
-          <i className="bi bi-brush" style={{ color: '#ffbb2c' }}></i>
-          <h3><a href="#" className="stretched-link">Graphic Design</a></h3>
+        {/* Section Title */}
+        <div className="container section-title" data-aos="fade-up">
+          <h2>Features</h2>
+          <div>
+            <span>I'm</span>
+            <span className="description-title">interested in</span>
+          </div>
         </div>
-      </div>
+        {/* End Section Title */}
 
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div className="features-item">
-          <i className="bi bi-code" style={{ color: '#5578ff' }}></i>
-          <h3><a href="#" className="stretched-link">Coding</a></h3>
+        <div className="container">
+          <div className="row gy-4">
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="features-item">
+                <i className="bi bi-brush" style={{ color: "#ffbb2c" }}></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Graphic Design
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div className="features-item">
+                <i className="bi bi-code" style={{ color: "#5578ff" }}></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Coding
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div className="features-item">
+                <i
+                  className="bi bi-mortarboard"
+                  style={{ color: "#e80368" }}
+                ></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Learning
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div className="features-item">
+                <i className="bi bi-joystick" style={{ color: "#e361ff" }}></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Gaming
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div className="features-item">
+                <i className="bi bi-people" style={{ color: "#47aeff" }}></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Social Media
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div className="features-item">
+                <i
+                  className="bi bi-motherboard"
+                  style={{ color: "#ffa76e" }}
+                ></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Hardware
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <div className="features-item">
+                <i className="bi bi-laptop" style={{ color: "#11dbcf" }}></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Software
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <div className="features-item">
+                <i className="bi bi-star" style={{ color: "#4233ff" }}></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Technology
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            >
+              <div className="features-item">
+                <i className="bi bi-github" style={{ color: "#b2904f" }}></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Github
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+            >
+              <div className="features-item">
+                <i className="bi bi-git" style={{ color: "#b20969" }}></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Version Control
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            >
+              <div className="features-item">
+                <i className="bi bi-type" style={{ color: "#ff5828" }}></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Typography
+                  </a>
+                </h3>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-3 col-md-4"
+              data-aos="fade-up"
+              data-aos-delay="1200"
+            >
+              <div className="features-item">
+                <i
+                  className="bi bi-brightness-high"
+                  style={{ color: "#29cc61" }}
+                ></i>
+                <h3>
+                  <a href="#" className="stretched-link">
+                    Innovation
+                  </a>
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div className="features-item">
-          <i className="bi bi-mortarboard" style={{ color: '#e80368' }}></i>
-          <h3><a href="#" className="stretched-link">Learning</a></h3>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-        <div className="features-item">
-          <i className="bi bi-joystick" style={{ color: '#e361ff' }}></i>
-          <h3><a href="#" className="stretched-link">Gaming</a></h3>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
-        <div className="features-item">
-          <i className="bi bi-people" style={{ color: '#47aeff' }}></i>
-          <h3><a href="#" className="stretched-link">Social Media</a></h3>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
-        <div className="features-item">
-          <i className="bi bi-motherboard" style={{ color: '#ffa76e' }}></i>
-          <h3><a href="#" className="stretched-link">Hardware</a></h3>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
-        <div className="features-item">
-          <i className="bi bi-laptop" style={{ color: '#11dbcf' }}></i>
-          <h3><a href="#" className="stretched-link">Software</a></h3>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
-        <div className="features-item">
-          <i className="bi bi-star" style={{ color: '#4233ff' }}></i>
-          <h3><a href="#" className="stretched-link">Technology</a></h3>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
-        <div className="features-item">
-          <i className="bi bi-github" style={{ color: '#b2904f' }}></i>
-          <h3><a href="#" className="stretched-link">Github</a></h3>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
-        <div className="features-item">
-          <i className="bi bi-git" style={{ color: '#b20969' }}></i>
-          <h3><a href="#" className="stretched-link">Version Control</a></h3>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1100">
-        <div className="features-item">
-          <i className="bi bi-type" style={{ color: '#ff5828' }}></i>
-          <h3><a href="#" className="stretched-link">Typography</a></h3>
-        </div>
-      </div>
-
-      <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1200">
-        <div className="features-item">
-          <i className="bi bi-brightness-high" style={{ color: '#29cc61' }}></i>
-          <h3><a href="#" className="stretched-link">Innovation</a></h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       <section id="testimonials" className="testimonials section">
         {/* Section Title */}
@@ -399,8 +537,8 @@ function About() {
             }}
             slidesPerView="auto"
             pagination={{
-              el: '.swiper-pagination',
-              type: 'bullets',
+              el: ".swiper-pagination",
+              type: "bullets",
               clickable: true,
             }}
             breakpoints={{
@@ -414,36 +552,42 @@ function About() {
               },
             }}
           >
-            {[ 
+            {[
               {
-                text: 'Working with Prabhath was a fantastic experience. They delivered a high-quality e-commerce website...',
-                img: 'assets/img/testimonials/testimonials-1.png',
-                name: 'Radee Gimhani',
-                role: 'Ceo & Founder - Radee Online Shopping',
+                text: "Prabhath did an exceptional job. He was very communicative and thought of things I missed myself. I look forward to working with him in the future.",
+                img: "assets/img/testimonials/testimonials-6.jpg",
+                name: "Carrie Collins",
+                role: "Author / Content Writer - USA",
               },
               {
-                text: 'Great work again from this creator! He does an excellent job, fulfilling exactly what I asked for...',
-                img: 'assets/img/testimonials/testimonials-2.jpeg',
-                name: 'Harley Hunt',
-                role: 'Author - France',
+                text: "Working with Prabhath was a fantastic experience. They delivered a high-quality e-commerce website...",
+                img: "assets/img/testimonials/testimonials-1.png",
+                name: "Radee Gimhani",
+                role: "Ceo & Founder - Radee Online Shopping",
               },
               {
-                text: 'Prabhath delivered an exceptional branding kit for Niro Online Shopping...',
-                img: 'assets/img/testimonials/testimonials-3.jpeg',
-                name: 'Nirosha Sandamali',
-                role: 'Store Owner - Niro Online Shopping',
+                text: "Great work again from this creator! He does an excellent job, fulfilling exactly what I asked for...",
+                img: "assets/img/testimonials/testimonials-2.jpeg",
+                name: "Harley Hunt",
+                role: "Author - France",
               },
               {
-                text: 'Working with Prabhath on my project was an absolute pleasure! His creativity and professionalism blew me away...',
-                img: 'assets/img/testimonials/testimonials-4.jfif',
-                name: 'Rasika Fernando',
-                role: 'IT Technician - Dubai National Air Travel Agency',
+                text: "Prabhath delivered an exceptional branding kit for Niro Online Shopping...",
+                img: "assets/img/testimonials/testimonials-3.jpeg",
+                name: "Nirosha Sandamali",
+                role: "Store Owner - Niro Online Shopping",
               },
               {
-                text: '10/10 highly recommended, incredible work very happy customer...',
-                img: 'assets/img/testimonials/testimonials-5.webp',
-                name: 'Alex CZ',
-                role: 'Owner - www.llangoedhall.co.uk',
+                text: "Working with Prabhath on my project was an absolute pleasure! His creativity and professionalism blew me away...",
+                img: "assets/img/testimonials/testimonials-4.jfif",
+                name: "Rasika Fernando",
+                role: "IT Technician - Dubai National Air Travel Agency",
+              },
+              {
+                text: "10/10 highly recommended, incredible work very happy customer...",
+                img: "assets/img/testimonials/testimonials-5.webp",
+                name: "Alex CZ",
+                role: "Owner - www.llangoedhall.co.uk",
               },
             ].map((testimonial, index) => (
               <SwiperSlide key={index}>
