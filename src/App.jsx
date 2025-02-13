@@ -26,7 +26,7 @@ const App = () => {
                 "@context": "https://schema.org",
                 "@type": "Person",
                 "name": "Prabhath Kaluarachchi",
-                "url": "https://prabhath.me",
+                "url": "https://prabhath.online/",
                 "sameAs": [
                   "https://www.linkedin.com/in/prabhathkaluarachchi/",
                   "https://github.com/prabhathkaluarachchi"

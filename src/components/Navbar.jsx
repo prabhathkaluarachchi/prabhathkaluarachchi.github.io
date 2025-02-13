@@ -41,7 +41,7 @@ function Navbar() {
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
         <NavLink to="/" className="logo d-flex align-items-center">
-          <h1 className="sitename">prabhath.Me</h1>
+          <h1 className="sitename">prabhath.Online</h1>
         </NavLink>
 
         <nav id="navmenu" className={`navmenu ${isMenuOpen ? 'open' : ''}`}>
