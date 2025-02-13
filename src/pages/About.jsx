@@ -49,7 +49,7 @@ function About() {
                       <i className="bi bi-chevron-right"></i>
                       <strong>Website:</strong>
                       <span>
-                        <a href="https://prabhath.online/">www.prabhath.me</a>
+                        <a href="https://prabhath.online/">www.prabhath.online</a>
                       </span>
                     </li>
                     <li>
