@@ -140,7 +140,7 @@ function Portfolio() {
               <p>
               Here portfolio website for Carrie Collins to publish their books. Includes Portfolio, Newsletter, Upcoming Events, Contact Forms and Backup Security Management.
               </p>
-              <a href="assets/img/portfolio/app-2.jpg" title="Carrie Collins Author Website - WordPress"
+              <a href="assets/img/portfolio/app-4.jpg" title="Carrie Collins Author Website - WordPress"
                 data-gallery="portfolio-gallery-web" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
               <a href="https://carriecollinswrites.wpcomstaging.com/" target="_blank"
                 title="Carrie Collins Author Website - WordPress" className="details-link"><i className="bi bi-link-45deg"></i></a>
