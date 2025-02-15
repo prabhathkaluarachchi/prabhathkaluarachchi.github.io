@@ -1,15 +1,39 @@
-# prabhathme
-My Portfolio Website
-=======
-# React + Vite
+# 🌐 Prabhath.me - My Portfolio Website  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Live Demo:** [prabhath.online](https://prabhath.online/)  
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio website, built using **React + Vite**! This project showcases my skills, projects, and professional journey as a software engineer.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> master
-=======
-# ptk
+---
 
+## 🛠️ Tech Stack  
+- ⚡ **ReactJS + Vite** - Fast and optimized frontend  
+- 🎨 **Bootstrap** - Clean and modern styling  
+- 🌍 **Netlify + GitHub Pages** - Deployed for seamless access  
+- 📁 **Reusable Components** - Efficient and modular code  
+
+---
+
+## ✨ Features  
+✅ Instant Page Loading with React Router  
+✅ Responsive & Mobile-Friendly Design  
+✅ Well-Structured Components (Navbar, Footer, Pages)  
+✅ Optimized for Performance & SEO  
+
+---
+
+## 📂 Setup & Installation  
+Want to run this locally? Follow these steps:  
+
+```bash
+# Clone the repository
+git clone https://github.com/prabhathkaluarachchi/prabhathkaluarachchi.github.io.git
+
+# Navigate into the project directory
+cd your-repo
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
