@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@srexi/purecounterjs": "^1.5.0",
     "aos": "^2.3.4",
     "glightbox": "^3.3.1",
