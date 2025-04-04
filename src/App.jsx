@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet'; // Import Helmet
 
+
 const App = () => {
   return (
     <Router>
