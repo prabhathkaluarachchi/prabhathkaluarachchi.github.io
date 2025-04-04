@@ -5,29 +5,29 @@ function Resume() {
   const certificates = [
     {
       id: 1,
-      title: "Bachelor of Software Engineering (Honours)",
-      institution: "The Open University of Sri Lanka",
-      year: "2022 - Present",
+      title: "Introduction to SQL",
+      institution: "SoloLearn",
+      year: "2023",
       description:
-        "Currently pursuing my degree in Software Engineering with a focus on modern development practices.",
+        "Completed an online course on SQL, covering database management and query writing.",
       image: "./assets/img/certificate1.jpg",
     },
     {
       id: 2,
-      title: "Diploma in English",
-      institution: "SIBA Campus, Pallekele",
-      year: "2021 - 2022",
+      title: "Introduction to Python",
+      institution: "SoloLearn",
+      year: "2023",
       description:
-        "Completed a comprehensive English diploma program focusing on advanced communication skills.",
+        "Completed an online course on Python programming, focusing on syntax, data structures, and algorithms.",
       image: "./assets/img/certificate2.jpg",
     },
     {
       id: 3,
-      title: "Computer Literacy Certificate",
-      institution: "The Open University of Sri Lanka",
-      year: "2019 - 2020",
+      title: "Introduction to JAVA",
+      institution: "SoloLearn",
+      year: "2023",
       description:
-        "Gained essential skills in MS Office applications with 60 hours of hands-on practical training.",
+        "Completed an online course on Java programming, covering object-oriented programming concepts and Java syntax.",
       image: "./assets/img/certificate3.jpg",
     },
   ];
@@ -117,10 +117,10 @@ function Resume() {
                 </p>
                 <p>
                   <em>
-                    I have extensive work experience over 5 years as a
+                    I have extensive work experience over 6 years as a
                     freelancer on Fiverr, where I have collaborated with over
                     500 real clients worldwide. I worked in graphic design,
-                    including UI/UX design, logo creation, and flyer design.{" "}
+                    including UI/UX design, logo creation,flyer design and wordpress development.{" "}
                     <br />
                   </em>
                 </p>
