@@ -4,27 +4,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 function About() {
-
   const [counter1, setCounter1] = useState(0);
   const [counter2, setCounter2] = useState(0);
   const [counter3, setCounter3] = useState(0);
   const [counter4, setCounter4] = useState(0);
+  const [skillsAnimated, setSkillsAnimated] = useState(false);
 
   useEffect(() => {
     const timer1 = setInterval(() => {
-      if (counter1 < 347) setCounter1(prev => prev + 1);
+      if (counter1 < 347) setCounter1((prev) => prev + 1);
     }, 10);
 
     const timer2 = setInterval(() => {
-      if (counter2 < 412) setCounter2(prev => prev + 1);
+      if (counter2 < 412) setCounter2((prev) => prev + 1);
     }, 10);
 
     const timer3 = setInterval(() => {
-      if (counter3 < 660) setCounter3(prev => prev + 1);
+      if (counter3 < 660) setCounter3((prev) => prev + 1);
     }, 10);
 
     const timer4 = setInterval(() => {
-      if (counter4 < 25) setCounter4(prev => prev + 1);
+      if (counter4 < 25) setCounter4((prev) => prev + 1);
     }, 10);
 
     return () => {
@@ -36,6 +36,32 @@ function About() {
   }, [counter1, counter2, counter3, counter4]);
 
   useEffect(() => {
+    // Intersection Observer for skill animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setSkillsAnimated(true);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const skillsSection = document.querySelector(".skills-animation");
+    if (skillsSection) {
+      observer.observe(skillsSection);
+    }
+
+    return () => {
+      if (skillsSection) {
+        observer.unobserve(skillsSection);
+      }
+    };
+
+  }, []);
+
+  useEffect(() => {
     import("swiper").then((Swiper) => {
       // If you need to dynamically import Swiper components
       Swiper.default.use([
@@ -45,12 +71,6 @@ function About() {
       ]);
     });
 
-    // Initialize the progress bars
-    const progressBars = document.querySelectorAll(".progress-bar");
-    progressBars.forEach((bar) => {
-      const value = bar.getAttribute("aria-valuenow");
-      bar.style.width = `${value}%`;
-    });
   }, []);
 
   return (
@@ -128,7 +148,8 @@ function About() {
               <p className="py-3">
                 Hello! I'm Prabhath Kaluarachchi, an undergraduate software
                 engineer at OUSL. Passionate Frontend Developer specializing in
-                ReactJS with Vite, crafting fast and scalable web applications. <br />
+                ReactJS with Vite, crafting fast and scalable web applications.{" "}
+                <br />
                 Experienced in building WordPress projects and exploring modern
                 web technologies like Tailwind CSS, Node.js, and Express.js.
                 Always eager to learn, innovate, and enhance user experiences
@@ -164,21 +185,23 @@ function About() {
                     aria-valuenow="99"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "99%" : "0%" }}
                   ></div>
                 </div>
               </div>
 
               <div className="progress">
                 <span className="skill">
-                  <span>CSS</span> <i className="val">95%</i>
+                  <span>CSS</span> <i className="val">90%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    aria-valuenow="95"
+                    aria-valuenow="90"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "90%" : "0%" }}
                   ></div>
                 </div>
               </div>
@@ -194,37 +217,39 @@ function About() {
                     aria-valuenow="85"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "85%" : "0%" }}
                   ></div>
                 </div>
               </div>
 
               <div className="progress">
                 <span className="skill">
-                  <span>Adobe Photoshop / Illustrator</span>{" "}
-                  <i className="val">95%</i>
+                  <span>React Js</span> <i className="val">88%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    aria-valuenow="95"
+                    aria-valuenow="88"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "88%" : "0%" }}
                   ></div>
                 </div>
               </div>
 
               <div className="progress">
                 <span className="skill">
-                  <span>Figma</span> <i className="val">90%</i>
+                  <span>Python</span> <i className="val">80%</i>
                 </span>
                 <div className="progress-bar-wrap">
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    aria-valuenow="90"
+                    aria-valuenow="80"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "80%" : "0%" }}
                   ></div>
                 </div>
               </div>
@@ -240,6 +265,7 @@ function About() {
                     aria-valuenow="80"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "80%" : "0%" }}
                   ></div>
                 </div>
               </div>
@@ -257,6 +283,7 @@ function About() {
                     aria-valuenow="80"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "80%" : "0%" }}
                   ></div>
                 </div>
               </div>
@@ -272,6 +299,7 @@ function About() {
                     aria-valuenow="90"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "90%" : "0%" }}
                   ></div>
                 </div>
               </div>
@@ -287,6 +315,7 @@ function About() {
                     aria-valuenow="85"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "85%" : "0%" }}
                   ></div>
                 </div>
               </div>
@@ -302,6 +331,7 @@ function About() {
                     aria-valuenow="85"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "85%" : "0%" }}
                   ></div>
                 </div>
               </div>
@@ -317,6 +347,7 @@ function About() {
                     aria-valuenow="60"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "60%" : "0%" }}
                   ></div>
                 </div>
               </div>
@@ -332,6 +363,7 @@ function About() {
                     aria-valuenow="65"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    style={{ width: skillsAnimated ? "65%" : "0%" }}
                   ></div>
                 </div>
               </div>
@@ -436,11 +468,12 @@ function About() {
       </section>
 
       <section id="stats" className="stats section">
-                {/* Section Title */}
-                <div className="container section-title" data-aos="fade-up">
+        {/* Section Title */}
+        <div className="container section-title" data-aos="fade-up">
           <h2>Fiverr Clients</h2>
           <div>
-            <span>Working</span> <span className="description-title">Status</span>
+            <span>Working</span>{" "}
+            <span className="description-title">Status</span>
           </div>
         </div>
         {/* End Section Title */}
