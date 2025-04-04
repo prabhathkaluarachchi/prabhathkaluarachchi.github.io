@@ -228,7 +228,7 @@ function Resume() {
             </div>
           </div>
           {/* End Section Title */}
-          <div className="text-center" data-aos="zoom-in" data-aos-delay="500">
+          <div className="text-center" data-aos="zoom-in" data-aos-delay="100">
             <a
               href="./Prabhath Kaluarachchi.pdf"
               className="btn-download-resume"

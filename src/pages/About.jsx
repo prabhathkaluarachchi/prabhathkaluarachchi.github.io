@@ -20,7 +20,7 @@ function About() {
     }, 10);
 
     const timer3 = setInterval(() => {
-      if (counter3 < 1560) setCounter3(prev => prev + 1);
+      if (counter3 < 660) setCounter3(prev => prev + 1);
     }, 10);
 
     const timer4 = setInterval(() => {
@@ -436,6 +436,14 @@ function About() {
       </section>
 
       <section id="stats" className="stats section">
+                {/* Section Title */}
+                <div className="container section-title" data-aos="fade-up">
+          <h2>Fiverr Clients</h2>
+          <div>
+            <span>Working</span> <span className="description-title">Status</span>
+          </div>
+        </div>
+        {/* End Section Title */}
         <div className="container" data-aos="fade-up" data-aos-delay="100">
           <div className="row gy-4">
             <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
