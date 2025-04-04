@@ -1,9 +1,40 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import PageTitle from "../components/PageTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 function About() {
+
+  const [counter1, setCounter1] = useState(0);
+  const [counter2, setCounter2] = useState(0);
+  const [counter3, setCounter3] = useState(0);
+  const [counter4, setCounter4] = useState(0);
+
+  useEffect(() => {
+    const timer1 = setInterval(() => {
+      if (counter1 < 347) setCounter1(prev => prev + 1);
+    }, 10);
+
+    const timer2 = setInterval(() => {
+      if (counter2 < 412) setCounter2(prev => prev + 1);
+    }, 10);
+
+    const timer3 = setInterval(() => {
+      if (counter3 < 1560) setCounter3(prev => prev + 1);
+    }, 10);
+
+    const timer4 = setInterval(() => {
+      if (counter4 < 25) setCounter4(prev => prev + 1);
+    }, 10);
+
+    return () => {
+      clearInterval(timer1);
+      clearInterval(timer2);
+      clearInterval(timer3);
+      clearInterval(timer4);
+    };
+  }, [counter1, counter2, counter3, counter4]);
+
   useEffect(() => {
     import("swiper").then((Swiper) => {
       // If you need to dynamically import Swiper components
@@ -37,7 +68,7 @@ function About() {
               />
             </div>
             <div className="col-lg-8 content">
-              <h2>Software Engineer (UG)</h2>
+              <h2>Prabhath Kaluarachchi</h2>
               <p className="fst-italic py-3">
                 I'm a driven undergraduate software engineer at the Open
                 University of Sri Lanka.
@@ -95,15 +126,13 @@ function About() {
                 </div>
               </div>
               <p className="py-3">
-                I am passionate about web development, UI/UX design, and
-                WordPress development, with a strong focus on creating
-                intuitive, visually engaging, and innovative solutions that
-                prioritize user experience. I thrive on transforming ideas into
-                interactive and functional designs that meet both user needs and
-                business goals. Whether through custom websites, thoughtful
-                interface designs, or WordPress platforms optimized for user
-                engagement, I aim to bridge the gap between design and
-                technology to deliver impactful digital experiences.
+                Hello! I'm Prabhath Kaluarachchi, an undergraduate software
+                engineer at OUSL. Passionate Frontend Developer specializing in
+                ReactJS with Vite, crafting fast and scalable web applications. <br />
+                Experienced in building WordPress projects and exploring modern
+                web technologies like Tailwind CSS, Node.js, and Express.js.
+                Always eager to learn, innovate, and enhance user experiences
+                with clean and efficient code.
               </p>
             </div>
           </div>
@@ -312,211 +341,6 @@ function About() {
       </section>
       {/* /Skills Section */}
 
-      <section id="interests" className="interests section">
-        {/* Section Title */}
-        <div className="container section-title" data-aos="fade-up">
-          <h2>Features</h2>
-          <div>
-            <span>I'm</span>
-            <span className="description-title">interested in</span>
-          </div>
-        </div>
-        {/* End Section Title */}
-
-        <div className="container">
-          <div className="row gy-4">
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="features-item">
-                <i className="bi bi-brush" style={{ color: "#ffbb2c" }}></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Graphic Design
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div className="features-item">
-                <i className="bi bi-code" style={{ color: "#5578ff" }}></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Coding
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div className="features-item">
-                <i
-                  className="bi bi-mortarboard"
-                  style={{ color: "#e80368" }}
-                ></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Learning
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div className="features-item">
-                <i className="bi bi-joystick" style={{ color: "#e361ff" }}></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Gaming
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div className="features-item">
-                <i className="bi bi-people" style={{ color: "#47aeff" }}></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Social Media
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div className="features-item">
-                <i
-                  className="bi bi-motherboard"
-                  style={{ color: "#ffa76e" }}
-                ></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Hardware
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="700"
-            >
-              <div className="features-item">
-                <i className="bi bi-laptop" style={{ color: "#11dbcf" }}></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Software
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="800"
-            >
-              <div className="features-item">
-                <i className="bi bi-star" style={{ color: "#4233ff" }}></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Technology
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="900"
-            >
-              <div className="features-item">
-                <i className="bi bi-github" style={{ color: "#b2904f" }}></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Github
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="1000"
-            >
-              <div className="features-item">
-                <i className="bi bi-git" style={{ color: "#b20969" }}></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Version Control
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="1100"
-            >
-              <div className="features-item">
-                <i className="bi bi-type" style={{ color: "#ff5828" }}></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Typography
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-3 col-md-4"
-              data-aos="fade-up"
-              data-aos-delay="1200"
-            >
-              <div className="features-item">
-                <i
-                  className="bi bi-brightness-high"
-                  style={{ color: "#29cc61" }}
-                ></i>
-                <h3>
-                  <a href="#" className="stretched-link">
-                    Innovation
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="testimonials" className="testimonials section">
         {/* Section Title */}
         <div className="container section-title" data-aos="fade-up">
@@ -608,6 +432,44 @@ function About() {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+      </section>
+
+      <section id="stats" className="stats section">
+        <div className="container" data-aos="fade-up" data-aos-delay="100">
+          <div className="row gy-4">
+            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i className="bi bi-emoji-smile"></i>
+              <div className="stats-item">
+                <span>{counter1}</span>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i className="bi bi-journal-richtext"></i>
+              <div className="stats-item">
+                <span>{counter2}</span>
+                <p>Projects</p>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i className="bi bi-headset"></i>
+              <div className="stats-item">
+                <span>{counter3}</span>
+                <p>Hours Of Support</p>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+              <i className="bi bi-people"></i>
+              <div className="stats-item">
+                <span>{counter4}</span>
+                <p>Hard Workers</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

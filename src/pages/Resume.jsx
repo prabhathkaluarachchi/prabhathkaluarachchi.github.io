@@ -1,36 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import PageTitle from '../components/PageTitle';
 
 function Resume() {
-  const [counter1, setCounter1] = useState(0);
-  const [counter2, setCounter2] = useState(0);
-  const [counter3, setCounter3] = useState(0);
-  const [counter4, setCounter4] = useState(0);
 
-  useEffect(() => {
-    const timer1 = setInterval(() => {
-      if (counter1 < 347) setCounter1(prev => prev + 1);
-    }, 10);
-
-    const timer2 = setInterval(() => {
-      if (counter2 < 412) setCounter2(prev => prev + 1);
-    }, 10);
-
-    const timer3 = setInterval(() => {
-      if (counter3 < 1560) setCounter3(prev => prev + 1);
-    }, 10);
-
-    const timer4 = setInterval(() => {
-      if (counter4 < 25) setCounter4(prev => prev + 1);
-    }, 10);
-
-    return () => {
-      clearInterval(timer1);
-      clearInterval(timer2);
-      clearInterval(timer3);
-      clearInterval(timer4);
-    };
-  }, [counter1, counter2, counter3, counter4]);
 
   return (
     <>
@@ -203,43 +174,7 @@ function Resume() {
         </div>
       </section>
 
-      <section id="stats" className="stats section">
-        <div className="container" data-aos="fade-up" data-aos-delay="100">
-          <div className="row gy-4">
-            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-              <i className="bi bi-emoji-smile"></i>
-              <div className="stats-item">
-                <span>{counter1}</span>
-                <p>Happy Clients</p>
-              </div>
-            </div>
 
-            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-              <i className="bi bi-journal-richtext"></i>
-              <div className="stats-item">
-                <span>{counter2}</span>
-                <p>Projects</p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-              <i className="bi bi-headset"></i>
-              <div className="stats-item">
-                <span>{counter3}</span>
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-              <i className="bi bi-people"></i>
-              <div className="stats-item">
-                <span>{counter4}</span>
-                <p>Hard Workers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
