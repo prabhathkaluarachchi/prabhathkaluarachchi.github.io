@@ -1292,3 +1292,31 @@ section,
     font-size: 24px;
   }
 }
+
+
+/* Download Resume Section */
+.btn-download-resume {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 30px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--accent-color);
+}
+
+.btn-download-resume:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+  text-decoration: none;
+  border-color: var(--accent-color);
+}
+
+.btn-download-resume i {
+  font-size: 22px;
+}

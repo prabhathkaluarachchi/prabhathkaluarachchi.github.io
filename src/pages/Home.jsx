@@ -32,10 +32,10 @@ function Home() {
     <main className="main">
       <section id="hero" className="hero section dark-background">
         {/* <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" /> */}
-        <img src="./assets/img/hero-bg.jpg" alt="Hero Background" data-aos="fade-in" />
+        <img src="./assets/img/hero-bg.jpg" alt="Hero Background" data-aos="fade-up" />
 
         {/* <img src={heroBg} alt="" data-aos="fade-in" /> */}
-        <div className="container" data-aos="zoom-out" data-aos-delay="100">
+        <div className="container" data-aos="fade-up" data-aos-delay="100" >
           <h2>Prabhath Kaluarachchi</h2>
           <p>
             I'm <span className="typed" ref={typedRef}></span> 
