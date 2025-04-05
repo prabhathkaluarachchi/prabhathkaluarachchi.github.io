@@ -58,7 +58,6 @@ function About() {
         observer.unobserve(skillsSection);
       }
     };
-
   }, []);
 
   useEffect(() => {
@@ -70,7 +69,6 @@ function About() {
         Swiper.Autoplay,
       ]);
     });
-
   }, []);
 
   return (
