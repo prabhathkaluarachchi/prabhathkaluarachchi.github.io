@@ -154,9 +154,11 @@ object-assign
                 "url": "https://prabhath.online/",
                 "sameAs": [
                   "https://www.linkedin.com/in/prabhathkaluarachchi/",
-                  "https://github.com/prabhathkaluarachchi"
+                  "https://github.com/prabhathkaluarachchi",
+                  "https://www.facebook.com/prabhathtkaluarachchi/",
+                  "https://www.instagram.com/prabhathtkaluarachchi/"
                 ],
-                "jobTitle": "Software Engineer | Frontend Developer",
+                "jobTitle": "Software Engineer | Frontend Developer"
               }
             `})]}),g.jsx(yg,{}),g.jsx("main",{className:"flex-grow",children:g.jsxs(rg,{children:[g.jsx(Wr,{path:"/",element:g.jsx(Tg,{})}),g.jsx(Wr,{path:"/about",element:g.jsx(ny,{})}),g.jsx(Wr,{path:"/resume",element:g.jsx(ry,{})}),g.jsx(Wr,{path:"/portfolio",element:g.jsx(Cy,{})}),g.jsx(Wr,{path:"/contact",element:g.jsx(Dy,{})})]})}),g.jsx(xg,{})]})});var to={exports:{}},T0=to.exports,Tf;function C0(){return Tf||(Tf=1,function(s,i){(function(n,o){s.exports=o()})(T0,function(){return function(n){function o(u){if(a[u])return a[u].exports;var p=a[u]={exports:{},id:u,loaded:!1};return n[u].call(p.exports,p,p.exports,o),p.loaded=!0,p.exports}var a={};return o.m=n,o.c=a,o.p="dist/",o(0)}([function(n,o,a){function u(le){return le&&le.__esModule?le:{default:le}}var p=Object.assign||function(le){for(var xe=1;xe<arguments.length;xe++){var Ce=arguments[xe];for(var ge in Ce)Object.prototype.hasOwnProperty.call(Ce,ge)&&(le[ge]=Ce[ge])}return le},f=a(1),d=(u(f),a(6)),v=u(d),w=a(7),x=u(w),S=a(8),T=u(S),P=a(9),N=u(P),b=a(10),y=u(b),k=a(11),L=u(k),z=a(14),H=u(z),J=[],te=!1,Y={offset:120,delay:0,easing:"ease",duration:400,disable:!1,once:!1,startEvent:"DOMContentLoaded",throttleDelay:99,debounceDelay:50,disableMutationObserver:!1},re=function(){var le=arguments.length>0&&arguments[0]!==void 0&&arguments[0];if(le&&(te=!0),te)return J=(0,L.default)(J,Y),(0,y.default)(J,Y.once),J},V=function(){J=(0,H.default)(),re()},G=function(){J.forEach(function(le,xe){le.node.removeAttribute("data-aos"),le.node.removeAttribute("data-aos-easing"),le.node.removeAttribute("data-aos-duration"),le.node.removeAttribute("data-aos-delay")})},W=function(le){return le===!0||le==="mobile"&&N.default.mobile()||le==="phone"&&N.default.phone()||le==="tablet"&&N.default.tablet()||typeof le=="function"&&le()===!0},ee=function(le){Y=p(Y,le),J=(0,H.default)();var xe=document.all&&!window.atob;return W(Y.disable)||xe?G():(Y.disableMutationObserver||T.default.isSupported()||(console.info(`
       aos: MutationObserver is not supported on this browser,
