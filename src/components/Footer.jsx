@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>    <footer id="footer" className="footer dark-background">
     <div class="credits">
-      &copy; 2025 <a href="/">Prabhath Kaluarachchi</a> | All rights reserved.
+      &copy; {new Date().getFullYear()} <a href="/">Prabhath Kaluarachchi</a> | All rights reserved.
   </div>
   </footer></>
   )
