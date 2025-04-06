@@ -6,28 +6,36 @@ document.addEventListener("contextmenu", function (event) {
 
 
 
-  /**
-   * Apply .scrolled class to the body as the page is scrolled down
-   */
-  function toggleScrolled() {
-    const selectBody = document.querySelector('body');
+/**
+ * Apply .scrolled class to the HTML root as the page is scrolled down
+ */
+let scrollTimeout;
+
+function toggleScrolled() {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    const selectRoot = document.documentElement;
     const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
-  }
+    
+    if (!selectHeader || !selectRoot) return; // Exit if elements don't exist
+    
+    // Only proceed if header has a sticky class (modify as needed)
+    if (!selectHeader.classList.contains('scroll-up-sticky') && 
+        !selectHeader.classList.contains('sticky-top') && 
+        !selectHeader.classList.contains('fixed-top')) {
+      return;
+    }
+    
+    window.scrollY > 100 
+      ? selectRoot.classList.add('scrolled') 
+      : selectRoot.classList.remove('scrolled');
+  }, 50);
+}
 
-  document.addEventListener('scroll', toggleScrolled);
-  window.addEventListener('load', toggleScrolled);
+// Attach event listeners
+document.addEventListener('scroll', toggleScrolled);
+window.addEventListener('load', toggleScrolled);
 
-  /**
-   * Preloader
-   */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
 
   /**
    * Init typed.js
@@ -44,11 +52,6 @@ document.addEventListener("contextmenu", function (event) {
       backDelay: 2000
     });
   }
-
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
 
   /**
    * Animate the skills items on reveal
