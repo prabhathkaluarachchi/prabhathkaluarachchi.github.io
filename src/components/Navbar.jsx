@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Toggle the mobile nav menu visibility
-  const toggleMenu = () => {
+  // Memoized toggle function
+  const toggleMenu = useCallback(() => {
     setIsMenuOpen(prevState => !prevState);
     document.body.classList.toggle('mobile-nav-active');
     const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
@@ -13,29 +13,30 @@ function Navbar() {
       mobileNavToggleBtn.classList.toggle('bi-list');
       mobileNavToggleBtn.classList.toggle('bi-x');
     }
-  };
+  }, []);
 
-  // Close the menu when a nav link is clicked
-  const handleLinkClick = () => {
+  // Memoized link click handler
+  const handleLinkClick = useCallback(() => {
     if (isMenuOpen) {
-      toggleMenu(); // Close the menu when any link is clicked
+      toggleMenu();
     }
-  };
+  }, [isMenuOpen, toggleMenu]);
 
   useEffect(() => {
-    // Add event listeners to navmenu links
     const navmenuLinks = document.querySelectorAll('#navmenu a');
-    navmenuLinks.forEach(link => {
-      link.addEventListener('click', handleLinkClick);
+    
+    const clickHandlers = Array.from(navmenuLinks).map(link => {
+      const handler = () => handleLinkClick();
+      link.addEventListener('click', handler);
+      return { link, handler };
     });
 
-    // Cleanup event listeners on component unmount
     return () => {
-      navmenuLinks.forEach(link => {
-        link.removeEventListener('click', handleLinkClick);
+      clickHandlers.forEach(({ link, handler }) => {
+        link.removeEventListener('click', handler);
       });
     };
-  }, [isMenuOpen]); // Re-run effect when isMenuOpen changes
+  }, [handleLinkClick]);
 
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
@@ -47,27 +48,58 @@ function Navbar() {
         <nav id="navmenu" className={`navmenu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li>
-              <NavLink to="/" exact activeClassName="active" onClick={handleLinkClick}>
+              <NavLink 
+                to="/" 
+                end // Replaces exact={true}
+                className={({ isActive }) => 
+                  isActive ? 'active' : ''
+                }
+                onClick={handleLinkClick}
+              >
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about" activeClassName="active" onClick={handleLinkClick}>
+              <NavLink 
+                to="/about"
+                className={({ isActive }) => 
+                  isActive ? 'active' : ''
+                }
+                onClick={handleLinkClick}
+              >
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink to="/resume" activeClassName="active" onClick={handleLinkClick}>
+              <NavLink 
+                to="/resume"
+                className={({ isActive }) => 
+                  isActive ? 'active' : ''
+                }
+                onClick={handleLinkClick}
+              >
                 Resume
               </NavLink>
             </li>
             <li>
-              <NavLink to="/portfolio" activeClassName="active" onClick={handleLinkClick}>
+              <NavLink 
+                to="/portfolio"
+                className={({ isActive }) => 
+                  isActive ? 'active' : ''
+                }
+                onClick={handleLinkClick}
+              >
                 Portfolio
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" activeClassName="active" onClick={handleLinkClick}>
+              <NavLink 
+                to="/contact"
+                className={({ isActive }) => 
+                  isActive ? 'active' : ''
+                }
+                onClick={handleLinkClick}
+              >
                 Contact
               </NavLink>
             </li>
@@ -75,6 +107,7 @@ function Navbar() {
           <i
             className={`mobile-nav-toggle d-xl-none bi ${isMenuOpen ? 'bi-x' : 'bi-list'}`}
             onClick={toggleMenu}
+            aria-label="Toggle navigation menu"
           ></i>
         </nav>
       </div>

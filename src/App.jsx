@@ -7,7 +7,7 @@ import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const App = () => {
   return (

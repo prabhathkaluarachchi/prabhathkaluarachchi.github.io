@@ -120,11 +120,11 @@ function Resume() {
                     I have extensive work experience over 6 years as a
                     freelancer on Fiverr, where I have collaborated with over
                     500 real clients worldwide. I worked in graphic design,
-                    including UI/UX design, logo creation,flyer design and wordpress development.{" "}
-                    <br />
+                    including UI/UX design, logo creation, flyer design and
+                    WordPress development.
                   </em>
                 </p>
-                <p>
+                <div>
                   <ul>
                     <li>
                       6+ years of experience as a freelancer on Fiverr,
@@ -135,7 +135,7 @@ function Resume() {
                       on Fiverr and local marketplaces.
                     </li>
                   </ul>
-                </p>
+                </div>
               </div>
             </div>
           </div>
