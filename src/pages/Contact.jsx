@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
 import PageTitle from '../components/PageTitle';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 export const Contact = () => {
   const form = useRef();
-  const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,37 +13,27 @@ export const Contact = () => {
       .sendForm(
         'service_v6e5gws', // Service ID
         'template_js4cfyx', // Template ID
-        form.current, 
+        form.current,
         'Rl278ZygRImAbAYHh' // Public Key
       )
       .then(
         () => {
-          setMessageSent(true); // Set message as sent
-          form.current.reset(); // Reset form after successful submission
-
-          // Create success message dynamically
-          const successMessage = document.createElement('div');
-          successMessage.textContent = 'Message sent successfully!';
-          Object.assign(successMessage.style, {
-            backgroundColor: '#4CAF50', // Green background
-            color: '#FFF', // White text
-            padding: '10px', // Padding
-            marginBottom: '20px', // Margin bottom
-            borderRadius: '5px', // Rounded corners
-            textAlign: 'center', // Center text
-            marginTop: '10px', // Space from form
+          Swal.fire({
+            icon: 'success',
+            title: 'Message Sent!',
+            text: 'Your message has been sent successfully.',
+            timer: 3000,
+            showConfirmButton: false,
           });
-
-          form.current.parentNode.insertBefore(successMessage, form.current.nextSibling);
-
-          // Remove message after 3 seconds
-          setTimeout(() => {
-            successMessage.remove();
-            setMessageSent(false);
-          }, 3000);
+          form.current.reset(); // Clear form
         },
         (error) => {
           console.error('FAILED...', error.text);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops!',
+            text: 'Something went wrong. Please try again later.',
+          });
         }
       );
   };
@@ -90,11 +80,11 @@ export const Contact = () => {
                 <div>
                   <h3>Social Profiles</h3>
                   <div className="social-links">
-                    <a href="https://wa.me/94772347420" target="_blank"><i className="bi bi-whatsapp"></i></a>
-                    <a href="https://www.facebook.com/prabhathtkaluarachchi/" target="_blank"><i className="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/prabhathtkaluarachchi/" target="_blank"><i className="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/prabhathkaluarachchi/" target="_blank"><i className="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/prabhathkaluarachchi" target="_blank"><i className="bi bi-github"></i></a>
+                    <a href="https://wa.me/94772347420" target="_blank" rel="noreferrer"><i className="bi bi-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/prabhathtkaluarachchi/" target="_blank" rel="noreferrer"><i className="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/prabhathtkaluarachchi/" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/prabhathkaluarachchi/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/prabhathkaluarachchi" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -113,9 +103,10 @@ export const Contact = () => {
       </section>
     </>
   );
-}
+};
 
 export default Contact;
+
 
 
 // import React, { useState, useEffect } from 'react';
