@@ -1,9 +1,3 @@
-// // Disable right-click with custom message
-// document.addEventListener("contextmenu", function (event) {
-//   event.preventDefault();
-//   alert("Right Click was disabled by Administrator Prabhath Kaluarachchi");
-// });
-
 /**
  * Apply .scrolled class to the HTML root as the page is scrolled down
  */
