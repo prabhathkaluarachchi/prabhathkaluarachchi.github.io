@@ -1,5 +1,6 @@
 import PageTitle from "../components/PageTitle";
 import { useEffect } from "react";
+import Swal from "sweetalert2";
 
 function Resume() {
   const certificates = [
@@ -233,6 +234,26 @@ function Resume() {
               href="./Prabhath Kaluarachchi.pdf"
               className="btn-download-resume"
               download="Prabhath Kaluarachchi.pdf"
+              onClick={(e) => {
+                Swal.fire({
+                  icon: "info",
+                  title: "Download Started",
+                  text: "Your resume download is starting...",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+
+                // Optional: Show 'completed' after 2 seconds
+                setTimeout(() => {
+                  Swal.fire({
+                    icon: "success",
+                    title: "Download Complete",
+                    text: "Your resume should now be downloaded!",
+                    timer: 2000,
+                    showConfirmButton: false,
+                  });
+                }, 2000);
+              }}
             >
               <i className="bi bi-download me-2"></i>
               Download Resume
