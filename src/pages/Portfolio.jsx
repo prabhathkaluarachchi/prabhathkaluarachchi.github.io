@@ -123,6 +123,41 @@ function Portfolio() {
               <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
                 <div className="portfolio-content h-100">
                   <img
+                    src="assets/img/portfolio/stampello.jpg"
+                    className="img-fluid"
+                    alt=""
+                  />
+                  <div className="portfolio-info">
+                    <h4>MERN Full Stack Web Application - StampEllo</h4>
+                    <p>
+                      A modern MERN (MongoDB, Express, React,
+                      Node.js) fullstack web application for stamp collectors,
+                      allowing users to explore collections and admins to manage
+                      them effortlessly
+                    </p>
+                    <a
+                      href="assets/img/portfolio/stampello.jpg"
+                      title="MERN Full Stack Web Application - StampEllo"
+                      data-gallery="portfolio-gallery-web"
+                      className="glightbox preview-link"
+                    >
+                      <i className="bi bi-zoom-in"></i>
+                    </a>
+                    <a
+                      href="https://stampello.netlify.app/"
+                      target="_blank"
+                      title="MERN Full Stack Web Application - StampEllo"
+                      className="details-link"
+                    >
+                      <i className="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                <div className="portfolio-content h-100">
+                  <img
                     src="assets/img/portfolio/medi.png"
                     className="img-fluid"
                     alt=""
