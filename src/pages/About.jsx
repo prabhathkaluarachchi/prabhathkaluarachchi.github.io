@@ -145,11 +145,11 @@ function About() {
               </div>
               <p className="py-3">
                 Hello! I'm Prabhath Kaluarachchi, an undergraduate software
-                engineer at OUSL. Passionate Frontend Developer specializing in
-                ReactJS with Vite, crafting fast and scalable web applications.{" "}
+                engineer at OUSL. Passionate Web Developer specializing in
+                MERN, crafting fast and scalable web applications.{" "}
                 <br />
-                Experienced in building WordPress projects and exploring modern
-                web technologies like Tailwind CSS, Node.js, and Express.js.
+                Experienced in building MERN projects and exploring modern
+                web technologies like Tailwind CSS, NEXT.js, and Wordpress.
                 Always eager to learn, innovate, and enhance user experiences
                 with clean and efficient code.
               </p>
