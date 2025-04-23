@@ -240,7 +240,7 @@ function Portfolio() {
                     </p>
                     <a
                       href="assets/img/portfolio/educon.jpg"
-                      title="Redesigned LOLC Real Time App UI/UX"
+                      title="EduConnect App UI/UX"
                       data-gallery="portfolio-gallery-uiux"
                       className="glightbox preview-link"
                     >
