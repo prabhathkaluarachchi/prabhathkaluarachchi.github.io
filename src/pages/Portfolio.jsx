@@ -130,10 +130,9 @@ function Portfolio() {
                   <div className="portfolio-info">
                     <h4>MERN Full Stack Web Application - StampEllo</h4>
                     <p>
-                      A modern MERN (MongoDB, Express, React,
-                      Node.js) fullstack web application for stamp collectors,
-                      allowing users to explore collections and admins to manage
-                      them effortlessly
+                      A modern MERN (MongoDB, Express, React, Node.js) fullstack
+                      web application for stamp collectors, allowing users to
+                      explore collections and admins to manage them effortlessly
                     </p>
                     <a
                       href="assets/img/portfolio/stampello.jpg"
@@ -225,11 +224,6 @@ function Portfolio() {
                 </div>
               </div>
 
-
-
-
-
-
               <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
                 <div className="portfolio-content h-100">
                   <img
@@ -240,7 +234,9 @@ function Portfolio() {
                   <div className="portfolio-info">
                     <h4>EduConnect App UI/UX</h4>
                     <p>
-                    Prototyping and designing responsive screens in Figma, focusing on providing a seamless experience for educational content with offline access.
+                      Prototyping and designing responsive screens in Figma,
+                      focusing on providing a seamless experience for
+                      educational content with offline access.
                     </p>
                     <a
                       href="assets/img/portfolio/educon.jpg"
@@ -261,16 +257,6 @@ function Portfolio() {
                   </div>
                 </div>
               </div>
-
-
-
-
-
-
-
-
-
-
 
               <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
                 <div className="portfolio-content h-100">
@@ -295,7 +281,7 @@ function Portfolio() {
                       <i className="bi bi-zoom-in"></i>
                     </a>
                     <a
-                      href="https://www.figma.com/proto/szuSRSTYeDgw3kBai6fPg0/LOLC-Real-Time-APP"
+                      href="https://www.figma.com/design/szuSRSTYeDgw3kBai6fPg0/LOLC-Real-Time-APP?t=UxsIBfzY070wLY1F-1"
                       target="_blank"
                       title="Redesigned LOLC Real Time App UI/UX"
                       className="details-link"
@@ -305,22 +291,6 @@ function Portfolio() {
                   </div>
                 </div>
               </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
               <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
                 <div className="portfolio-content h-100">
@@ -414,7 +384,7 @@ function Portfolio() {
                       <i className="bi bi-zoom-in"></i>
                     </a>
                     <a
-                      href="https://www.figma.com/proto/kOQ4prEbDoL6WTDFGkvQ72/LMS-APP---Prabhath-Kaluarachchi"
+                      href="https://www.figma.com/design/kOQ4prEbDoL6WTDFGkvQ72/LMS-APP---Prabhath-Kaluarachchi?t=UxsIBfzY070wLY1F-1"
                       target="_blank"
                       title="More Details"
                       className="details-link"
