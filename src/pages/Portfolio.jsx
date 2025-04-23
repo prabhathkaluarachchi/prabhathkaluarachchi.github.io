@@ -225,6 +225,53 @@ function Portfolio() {
                 </div>
               </div>
 
+
+
+
+
+
+              <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+                <div className="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/educon.jpg"
+                    className="img-fluid"
+                    alt=""
+                  />
+                  <div className="portfolio-info">
+                    <h4>EduConnect App UI/UX</h4>
+                    <p>
+                    Prototyping and designing responsive screens in Figma, focusing on providing a seamless experience for educational content with offline access.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/educon.jpg"
+                      title="Redesigned LOLC Real Time App UI/UX"
+                      data-gallery="portfolio-gallery-uiux"
+                      className="glightbox preview-link"
+                    >
+                      <i className="bi bi-zoom-in"></i>
+                    </a>
+                    <a
+                      href="https://www.figma.com/design/d7JQeP5hERmtxkGyElJcvo/EduConnect-App?t=UxsIBfzY070wLY1F-1"
+                      target="_blank"
+                      title="EduConnect App UI/UX"
+                      className="details-link"
+                    >
+                      <i className="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
               <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
                 <div className="portfolio-content h-100">
                   <img
@@ -258,6 +305,22 @@ function Portfolio() {
                   </div>
                 </div>
               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
               <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
                 <div className="portfolio-content h-100">
