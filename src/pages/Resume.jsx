@@ -263,7 +263,7 @@ function Resume() {
           {/* End Section Title */}
           <div className="text-center" data-aos="zoom-in" data-aos-delay="100">
             <a
-              href="./Prabhath Kaluarachchi.pdf"
+              href="./Prabhath_Kaluarachchi.pdf"
               className="btn-download-resume"
               download="Prabhath Kaluarachchi.pdf"
               onClick={(e) => {
