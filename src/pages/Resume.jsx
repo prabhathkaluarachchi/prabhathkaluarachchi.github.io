@@ -110,7 +110,7 @@ function Resume() {
 
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <h3 className="resume-title">Professional Experience</h3>
-              <div className="resume-item pb-0">
+              <div className="resume-item">
                 <h4>Freelance Web Developer, UI/UX & Graphic Designer</h4>
                 <h5>2019 - present</h5>
                 <p>
@@ -134,6 +134,38 @@ function Resume() {
                     <li>
                       2 years of experience as a freelance WordPress developer
                       on Fiverr and local marketplaces.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="resume-item pb-0">
+                <h4>Intern Software Engineer</h4>
+                <h5>May 2025 – Nov 2025</h5>
+                <p>
+                  <em>All in One Holdings (PVT) Ltd.</em>
+                </p>
+                <p>
+                  <em>
+                    Completed a full-time internship as an Intern Software
+                    Engineer, gaining hands-on experience in full-stack
+                    development and WordPress solutions within a professional
+                    software development environment.
+                  </em>
+                </p>
+                <div>
+                  <ul>
+                    <li>
+                      Worked on full-stack web applications using the MERN stack
+                      (MongoDB, Express, React, Node.js).
+                    </li>
+                    <li>
+                      Developed and customized WordPress websites using
+                      Elementor and custom coding with PHP, HTML, CSS, and
+                      JavaScript.
+                    </li>
+                    <li>
+                      Collaborated with team members to design, develop, and
+                      optimize responsive and user-friendly web applications.
                     </li>
                   </ul>
                 </div>
