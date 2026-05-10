@@ -20,20 +20,5 @@ Welcome to my personal portfolio website, built using **React + Vite**! This pro
 ✅ Well-Structured Components (Navbar, Footer, Pages)  
 ✅ Optimized for Performance & SEO  
 
----
 
-## 📂 Setup & Installation  
-Want to run this locally? Follow these steps:  
 
-```bash
-# Clone the repository
-git clone https://github.com/prabhathkaluarachchi/prabhathkaluarachchi.github.io.git
-
-# Navigate into the project directory
-cd your-repo
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
