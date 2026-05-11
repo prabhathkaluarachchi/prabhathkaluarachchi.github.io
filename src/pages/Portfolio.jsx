@@ -27,7 +27,7 @@ function Portfolio() {
             layoutMode: layout,
             filter: filter,
             sortBy: sort,
-          }
+          },
         );
       });
 
@@ -146,6 +146,47 @@ function Portfolio() {
                       href="https://stampello.netlify.app/"
                       target="_blank"
                       title="MERN Full Stack Web Application - StampEllo"
+                      className="details-link"
+                    >
+                      <i className="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                <div className="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/lmsweb.jpg"
+                    className="img-fluid"
+                    alt=""
+                  />
+                  <div className="portfolio-info">
+                    <h4>
+                      Skills Development Platform with CV Filtering System -
+                      Devlupa
+                    </h4>
+                    <p>
+                      <p>
+                        A modern MERN (MongoDB, Express, React, Node.js)
+                        full-stack learning and internship management platform
+                        powered by Gemini AI.
+                      </p>
+                    </p>
+                    <a
+                      href="assets/img/portfolio/lmsweb.jpg"
+                      title="<p>
+  A modern MERN (MongoDB, Express, React, Node.js) full-stack learning and internship management platform powered by Gemini AI, enabling students to develop skills through interactive courses while helping administrators manage learning, analytics, and AI-based candidate screening efficiently.
+</p>"
+                      data-gallery="portfolio-gallery-web"
+                      className="glightbox preview-link"
+                    >
+                      <i className="bi bi-zoom-in"></i>
+                    </a>
+                    <a
+                      href="https://devlupa.netlify.app/"
+                      target="_blank"
+                      title="Skills Development Platform with CV Filtering System - Devlupa"
                       className="details-link"
                     >
                       <i className="bi bi-link-45deg"></i>
